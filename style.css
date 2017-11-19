@@ -1,1 +1,47 @@
-<!-- Styles Mang -->
+body {
+  margin: 0;
+}
+
+/* Stylings for Nav Bar */
+nav {
+  max-width: 100%;
+  height: 50px;
+  /* Background color used to visualize layout. Remove when publishing */
+  background-color: gray;
+}
+
+/* Stylings for Header */
+header {
+  max-width: 100%;
+  height: 200px;
+  /* Background color used to visualize layout. Remove when publishing */
+  background-color: khaki;
+}
+
+/* Stylings for side bar on the left. */
+aside {
+  float: left;
+  width: 25%;
+  height: 600px;
+  /* Background color used to visualize layout. Remove when publishing */
+  background-color: tomato;
+}
+
+/* Stylings for content on the right */
+section {
+  float: right;
+  width: 75%;
+  height: 600px;
+  /* Background color used to visualize layout. Remove when publishing */
+  background-color: powderblue;
+}
+
+/* Stylings for footer */
+footer {
+  max-width: 100%;
+  height: 200px;
+  clear: both;
+  /* Borders used to visualize layout. Remove when publishing */
+  /* Background color used to visualize layout. Remove when publishing */
+  background-color: palevioletred;
+}
