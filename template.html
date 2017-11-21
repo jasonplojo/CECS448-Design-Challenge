@@ -3,6 +3,7 @@
 <head>
   <title>Design Challenge</title>
   <link rel="stylesheet" href="style.css">
+  <script src="dropdown_menu.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,55 @@
   <section>
     <!-- Put right content here -->
     <!-- Jason (Dropdown Menu) -->
-    The is the right content.
+    <div class="section-container">
+
+    <h1>This is where the headers will be.</h1>
+
+    <!-- Menu Item 1 -->
+    <div align="center">
+      <button onclick="showContent('menuItem1')" class="dropdown">Menu Item 1</button>
+
+      <!-- Content to display when button is clicked -->
+      <div id="menuItem1" class="dropdown-content">
+
+        <div class="dropdown-content-container">
+
+          <div class="dropdown-content-top">
+            Top content.
+          </div>
+
+          <div class="dropdown-content-left">
+            Left content.
+          </div>
+
+          <div class="dropdown-content-right">
+            Right content.
+            Even more content.
+            Yes. content.<br>
+            There is some more to the claim!
+          </div>
+
+        </div>
+      </div>
+
+      <button onclick="showContent('menuItem2')" class="dropdown">Menu Item 2</button>
+
+      <!-- Content to display when button is clicked -->
+      <div id="menuItem2" class="dropdown-content">
+        This is the contents of menu item 2.
+      </div>
+
+      <button onclick="showContent('menuItem3')" class="dropdown">Menu Item 3</button>
+
+      <!-- Content to display when button is clicked -->
+      <div id="menuItem3" class="dropdown-content">
+        This is the contents of menu item 3.
+      </div>
+
+    </div>
+
+    </div>
+
   </section>
 
   <footer>
