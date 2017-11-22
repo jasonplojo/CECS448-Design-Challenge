@@ -1,3 +1,4 @@
+/* Importing fonts that are used at the CSULB website */
 @font-face {
   font-family: Lato;
   src: url('fonts/Lato/Lato-Light.ttf');
@@ -13,7 +14,6 @@
 }
 
 body {
-  font:
   margin: 0;
 }
 
@@ -42,7 +42,12 @@ aside {
   background-color: tomato;
 }
 
-/* Stylings for content on the right */
+/********************/
+/* SECTION STYLINGS */
+/********************/
+
+/* General styling for section. Font properties were pulled from the CSULB
+   website using a Google Chrome extension. */
 section {
   float: right;
   width: 75%;
@@ -52,36 +57,45 @@ section {
   line-height: 27px;
 }
 
+/* h1-h3 will have the yellow underline border */
 section h1,h2,h3 {
   font-weight: inherit;
   border-bottom: 1px solid #FFD07F;
   padding-bottom: 10px;
 }
 
+/* h4-h6 will have regular font weight. Font properties were pulled from
+   the CSULB website using a Google Chrome extension. */
 section h4,h5,h6 {
   font-weight: 400;
 }
 
+/* Font size of h1 is 32px, according to the CSULB website */
 section h1 {
   font-size: 32px;
 }
 
+/* Color for all links in section */
 section a {
   color: #B86F4C;
 }
 
+/* General padding for all the content in section */
 div.section-container {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
 }
 
+/* Padding and display settings for links for content in section */
 div.section-container a {
   display: block;
   font-weight: 400;
   padding-bottom: 5px;
 }
 
+/* Button attributes for dropdown. The font properties were pull from CSULB website
+   using a Google Chrome extension */
 button.dropdown {
   background-color: #D7D0C4;
   color: black;
@@ -96,11 +110,13 @@ button.dropdown {
   line-height: 20px;
 }
 
-button.dropdown:hover, button.dropdown:active{
+/* Dropdown button color when hovered over */
+button.dropdown:hover, button.dropdown:active {
   background-color: #EF9E1D;
   border: none;
 }
 
+/* Renders a triangle the points downward */
 div.triangle-down {
   display: inline-block;
   float: right;
@@ -111,6 +127,7 @@ div.triangle-down {
   border-top: 14px solid white;
 }
 
+/* Renders a triangle the points upward */
 div.triangle-up {
   display: inline-block;
   float: right;
@@ -121,7 +138,8 @@ div.triangle-up {
   border-bottom: 14px solid white;
 }
 
-/* Stylings for dropdown menu */
+/* Stylings for dropdown menu. Animations to show dropdown content is defined
+   here. The transition will use the property "max-height" for animation. */
 div.dropdown-content {
   overflow-y: hidden;
   background-color: #F0F0ED;
@@ -135,10 +153,12 @@ div.dropdown-content {
   text-align: left;
 }
 
+/* General padding for content in dropdown menu */
 div.dropdown-content-container {
   padding: 20px;
 }
 
+/* Left layout for dropdown content */
 div.dropdown-content-left {
   float: left;
   width: 50%;
@@ -146,6 +166,7 @@ div.dropdown-content-left {
   padding-bottom: 20px;
 }
 
+/* Right layout for dropdown content */
 div.dropdown-content-right {
   float: right;
   width: 50%;
@@ -153,10 +174,13 @@ div.dropdown-content-right {
   padding-bottom: 20px;
 }
 
+/* Color for links when hovered */
 div.dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
+/* This will hide the content of the dropdown menu. The animation to hide the content
+   is defined here. The transition uses "max-height" for animation. */
 div.dropdown-hide {
   max-height: 0px;
   transition-property: max-height;
