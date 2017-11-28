@@ -21,10 +21,6 @@ body {
 nav {
   font-family: Lato;
   opacity: 0.9;
-  /*
-  max-width: 100%;
-  height: 50px;
-  /* Background color used to visualize layout. Remove when publishing */
   background-color: gray;
   */
 }
@@ -32,9 +28,15 @@ nav {
 /* Stylings for Header */
 header {
   max-width: 100%;
-  height: 200px;
+  height: 120px;
+  text-align: center;
+  padding: 70px 0;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 200%;
+  color: white;
   /* Background color used to visualize layout. Remove when publishing */
-  background-color: khaki;
+  background-color: #B7B7B7;
 }
 
 /* Stylings for side bar on the left. */
