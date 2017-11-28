@@ -194,9 +194,10 @@ div.dropdown-hide {
 
 /* Stylings for footer */
 footer {
+  clear: both;
   font-family: Lato;
-  padding-top:20px;
-  padding-bottom:20px;
+  font-weight: 300;
+  padding: 20px;
   background:#484236;
   color:#d6d0c4;
 }
