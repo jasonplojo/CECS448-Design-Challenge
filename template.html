@@ -35,7 +35,34 @@
   <aside>
     <!-- Put left side content here -->
     <!-- Ivan (Menus) -->
-    This is the left menu.
+    <div class="aside-container">
+        <h1>MENU</h1>
+        <div class="">
+            <a href="#cnsm_home">CNSM HOME</a>
+            <a href="#contacts">CONTACTS</a>
+        </div>
+        <h4>FOR STUDENTS</h4>
+        <div class="aside-links">
+            <a href="#advising">ADVISING</a>
+            <a href="#tutoring">TUTORING</a>
+            <a href="#jensen">JENSEN SAS CENTER</a>
+            <a href="#schedule">SCHEDULE OF CLASSES</a>
+            <a href="#commencement">COMMENCEMENT</a>
+            <a href="#student_res">STUDENT RESOURCES</a><!--TODO: Dropdown-->
+        </div>
+        <button onclick="showContent('side_menuItem1', 'side_buttonItem1')" class="aside-dropdown" align="left">
+            TEST_IVAN <div id="side_buttonItem1" class="triangle-down"></div>
+        </button>
+        <div id="side_menuItem1" class="aside-dropdown-content dropdown-hide">
+            
+            <div class="dropdown-content-container">
+                <div>
+                    <a href="#get_started">Getting Started</a>
+                    <a href="#study26">Study36</a>
+                </div>
+            </div>
+        </div>
+    </div>
   </aside>
 
   <!-- This is where the main content will be for the website. It will be on the right side -->
