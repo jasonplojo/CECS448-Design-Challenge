@@ -22,7 +22,9 @@ nav {
   font-family: Lato;
   opacity: 0.9;
   background-color: gray;
-  */
+  position: fixed;
+  overflow: auto;
+  width: 100%;
 }
 
 /* Stylings for Header */
