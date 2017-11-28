@@ -2,7 +2,10 @@
 <html>
 <head>
   <title>Design Challenge</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <script src="dropdown_menu.js"></script>
 </head>
 
 <body>
@@ -10,13 +13,23 @@
   <nav>
     <!-- Put Nav Bar code here -->
     <!-- Swapnil -->
-    This is the nav bar.
+    <div id="header">
+    <ul class="nav">
+      <li class="nav"><a class="active" href="#home">CALIFORNIA STATE UNIVERSITY <strong>LONG BEACH</strong></a></li>
+      <li class="nav"><a href="#academics">ACADEMICS</a></li>
+      <li class="nav"><a href="#campus_life">CAMPUS LIFE</a></li>
+      <li class="nav"><a href="#admissions">ADMISSIONS</a></li>
+      <li class="nav"><a href="#alumini">ALUMNI</a></li>
+      <li class="nav"><a href="#administration">ADMINISTRATION</a></li>
+      <li class="nav"><a href="#apply">APPLY</a></li>
+      <li class="nav"><a href="#search"><img src="search-icon.png" style="width:20px; height:20px"/></a></li>
+    </ul>
+    </div>
   </nav>
 
   <header>
     <!-- Put header code here -->
     <!-- Swapnil -->
-    This is the header.
   </header>
 
   <aside>
@@ -25,16 +38,371 @@
     This is the left menu.
   </aside>
 
+  <!-- This is where the main content will be for the website. It will be on the right side -->
   <section>
     <!-- Put right content here -->
     <!-- Jason (Dropdown Menu) -->
-    The is the right content.
+
+    <!-- This will handle the padding for the whole section -->
+    <div class="section-container">
+
+      <!-- This is a header. h1-h3 will have the yellow underline, no need to add an hr -->
+      <h1>Colleges & Departments</h1>
+
+      <div align="center">
+        <!-- Menu Item 1 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem1', 'buttonItem1')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          COLLEGE OF NATURAL SCIENCES & MATHEMATICS <div id="buttonItem1" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem1" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              <a href="http://web.csulb.edu/colleges/cnsm/"><b>College of Natural Sciences & Mathematics Homepage</b></a>
+              <p>The College of Natural Sciences and Mathematics is a leader in undergraduate and graduate student research.
+                Housed in a complex that includes the recently completed, state-of-the-art Hall of Science, the Molecular and
+                Life Sciences Center, the Microbiology Building, and Faculty Office 3, the college's six departments offer 22
+                degree programs at the graduate and undergraduate levels.
+              </p>
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <a href="http://web.csulb.edu/colleges/cnsm/"><b>CNSM Departments Catalog</b></a>
+
+              <!-- h4-h6 headings will not have the underline -->
+              <h4>Department Websites</h4>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Biological Science</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Chemistry and Biochemistry</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Geological Sciences</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Mathematics and Statistics</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Environmental Science and Policy</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Physics and Astronomy</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Science Education</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <img src="pictures/dean_curtis.png" alt="Dean Curtis"><br>
+              <b>Dean: Curtis Bennett</b><br>
+              Office: HSCI-160<br>
+              Phone: 562.985.4707<br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Contact CNSM</a><br>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem2', 'buttonItem2')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          MENU ITEM 2 <div id="buttonItem2" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem2" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              This is the top content.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              This is the left content.
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              This is the right content.
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem3', 'buttonItem3')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          MENU ITEM 3 <div id="buttonItem3" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem3" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              This is the top content.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              This is the left content.
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              This is the right content.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- This is where addition resources will be separated. This demostrates
+      how to separate content within the section -->
+      <h1>Additional Resources</h1>
+
+      <div align="center">
+
+        <!-- Menu Item 4 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem4', 'buttonItem4')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          LIBRARY <div id="buttonItem4" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem4" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              This is the library.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              Left content.
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right">
+              Right content.<br>
+              Even more content.<br>
+              Yes. content.<br>
+              There is some more to the claim!<br>
+              Right content.<br>
+              Even more content.<br>
+              Yes. content.<br>
+              There is some more to the claim!<br>
+              Right content.<br>
+              Even more content.<br>
+              Yes. content.<br>
+              There is some more to the claim!<br>
+              Right content.<br>
+              Even more content.<br>
+              Yes. content.<br>
+              There is some more to the claim!<br>
+              Right content.<br>
+              Even more content.<br>
+              Yes. content.<br>
+              There is some more to the claim!<br>
+              Right content.<br>
+              Even more content.<br>
+              Yes. content.<br>
+              There is some more to the claim!<br>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 5 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem5', 'buttonItem5')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          MENU ITEM 5 <div id="buttonItem5" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem5" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              This is the top content.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              This is the left content.
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              This is the right content.
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 6 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem6', 'buttonItem6')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          MENU ITEM 6 <div id="buttonItem6" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem6" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              This is the top content.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              This is the left content.
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              This is the right content.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
   <footer>
     <!-- Put footer code here -->
     <!-- Swapnil -->
-    This is the footer.
+    <div id="table_div">
+      <table id="t01">
+         <tr>
+         <th>SERVICES</th>
+         <th id="even_col">COLLEGES</th>
+         <th>&nbsp; </th>
+         <th id="even_col">ADDITIONAL RESOURCES</th>
+         <th>&nbsp;</th>
+         <th id="even_col">&nbsp;</th>
+         </tr>
+         <tr>
+        <td>Emergency Information</td>
+        <td id="even_col">The Arts</td>
+        <td>Business Administration</td>
+        <td id="even_col">Media and Government Relations</td>
+        <td>Marketing and Communications</td>
+        <td id="even_col">CSU</td>
+         </tr>
+         <tr>
+          <td>Crisis Assistance</td>
+        <td id="even_col"> Engineering</td>
+        <td>Health & Human Services</td>
+        <td id="even_col">Careers</td>
+        <td>University Police</td>
+        <td id="even_col">Site Index</td>
+         </tr>
+         <tr>
+          <td>CARES Team</td>
+        <td id="even_col">Education</td>
+        <td>Continuing & Professional Education</td>
+        <td id="even_col">Help</td>
+        <td>Campus Directory</td>
+        <td id="even_col">Contact Us</td>
+         </tr>
+         <tr>
+          <td>Accessibility</td>
+        <td id="even_col"> Liberal Arts</td>
+        <td>Natural Sciences & Mathematics</td>
+        <td id="even_col">Title IX</td>
+        <td>Download Document Reader</td>
+        <td id="even_col">&nbsp;</td>
+         </tr>
+         <tr>
+          <td>Student Health Center</td>
+        <td id="even_col">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td id="even_col">Free Speech</td>
+        <td>&nbsp;</td>
+        <td id="even_col">&nbsp;</td>
+         </tr>
+    </table>
+    </div>
+    <div id="coll_desc">
+    <p>CALIFORNIA STATE UNIVERSITY <strong>LONG BEACH</strong><br><br>
+
+            1250 Bellflower Boulevard<br>
+          Long Beach, California 90840<br>
+          562.985.4111
+     </p>
+    </div>
   </footer>
 
 </body>
