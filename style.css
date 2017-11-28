@@ -19,10 +19,14 @@ body {
 
 /* Stylings for Nav Bar */
 nav {
+  font-family: Lato;
+  opacity: 0.9;
+  /*
   max-width: 100%;
   height: 50px;
   /* Background color used to visualize layout. Remove when publishing */
   background-color: gray;
+  */
 }
 
 /* Stylings for Header */
@@ -190,10 +194,60 @@ div.dropdown-hide {
 
 /* Stylings for footer */
 footer {
-  max-width: 100%;
-  height: 200px;
-  clear: both;
-  /* Borders used to visualize layout. Remove when publishing */
-  /* Background color used to visualize layout. Remove when publishing */
-  background-color: palevioletred;
+  font-family: Lato;
+  padding-top:20px;
+  padding-bottom:20px;
+  background:#484236;
+  color:#d6d0c4;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gray;
+
+}
+
+li.nav {
+    float: left;
+	display: inline;
+	padding: 5px 20px 5px 20px;
+}
+
+li.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.nav a:hover {
+    background-color: #111;
+}
+
+#t01 {
+	 width:100%;
+	 padding-bottom:40px;
+}
+
+#even_col{
+    border-left:1px dotted #d6d0c4;
+	padding-left:20px;
+}
+
+#t01 tr {
+	 text-align:left;
+	 font-size:1.1em;
+}
+
+#t01 tr>td {
+	 text-align:left;
+	 font-size:0.9em;
+}
+
+#coll_desc {
+     text-align:center;
 }
