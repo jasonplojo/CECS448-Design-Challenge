@@ -1,0 +1,338 @@
+/* Importing fonts that are used at the CSULB website */
+@font-face {
+  font-family: Lato;
+  src: url('fonts/Lato/Lato-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('fonts/Lato/Lato-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+/* Stylings for Nav Bar */
+nav {
+  font-family: Lato;
+  opacity: 0.9;
+  background-color: gray;
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+}
+
+/* Stylings for Header */
+header {
+  max-width: 100%;
+  height: 120px;
+  text-align: center;
+  padding: 70px 0;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 200%;
+  color: white;
+  /* Background color used to visualize layout. Remove when publishing */
+  background-color: #B7B7B7;
+}
+
+div.header_image {
+    margin-top: 10px
+}
+
+/* Stylings for side bar on the left. */
+aside {
+    float: left;
+    width: 25%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+/* h1-h3 will have the yellow underline border */
+aside h1,h2,h3 {
+    font-weight: inherit;
+    border-bottom: 1px solid #FFD07F;
+    padding-bottom: 10px;
+}
+
+/* h4-h6 will have regular font weight. Font properties were pulled from
+ the CSULB website using a Google Chrome extension. */
+aside h4,h5,h6 {
+    font-weight: 600;
+}
+
+/* Font size of h1 is 32px, according to the CSULB website */
+aside h1 {
+    font-size: 32px;
+}
+
+/* Color for all links in aside */
+aside a {
+    color: #000000;
+    font-weight: 100;
+    text-decoration: none;
+    border-bottom: 1.5px solid #F0F0ED;
+}
+
+div.aside-links {
+    padding-left: 5px;
+}
+
+/* General padding for all the content in aside */
+div.aside-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+/* Padding and display settings for links for content in aside */
+div.aside-container a {
+    display: block;
+    font-weight: 0;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color:#595957;
+}
+
+div.aside-dropdown-content {
+    overflow-y: hidden;
+    width: 90%;
+    min-width: 160px;
+    max-height: 1000px;
+    position: relative;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    text-align: left;
+}
+
+button.aside-dropdown {
+    background-color: white;
+    color: #595957;
+    font-weight: 100;
+    border: none;
+    width: 100%;
+    min-width: 160px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid #F0F0ED;
+}
+
+/********************/
+/* SECTION STYLINGS */
+/********************/
+
+/* General styling for section. Font properties were pulled from the CSULB
+   website using a Google Chrome extension. */
+section {
+  float: right;
+  width: 75%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+/* h1-h3 will have the yellow underline border */
+section h1,h2,h3 {
+  font-weight: inherit;
+  border-bottom: 1px solid #FFD07F;
+  padding-bottom: 10px;
+}
+
+/* h4-h6 will have regular font weight. Font properties were pulled from
+   the CSULB website using a Google Chrome extension. */
+section h4,h5,h6 {
+  font-weight: 400;
+}
+
+/* Font size of h1 is 32px, according to the CSULB website */
+section h1 {
+  font-size: 32px;
+}
+
+/* Color for all links in section */
+section a {
+  color: #B86F4C;
+}
+
+/* General padding for all the content in section */
+div.section-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+/* Padding and display settings for links for content in section */
+div.section-container a {
+  display: block;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+/* Button attributes for dropdown. The font properties were pull from CSULB website
+   using a Google Chrome extension */
+button.dropdown {
+  background-color: #D7D0C4;
+  color: black;
+  padding: 16px;
+  border: none;
+  width: 90%;
+  min-width: 160px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: left;
+  line-height: 20px;
+}
+
+/* Dropdown button color when hovered over */
+button.dropdown:hover, button.dropdown:active {
+  background-color: #EF9E1D;
+  border: none;
+}
+
+/* Renders a triangle the points downward */
+div.triangle-down {
+  display: inline-block;
+  float: right;
+  float:bottom;
+
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #FFD07F;
+}
+
+/* Renders a triangle the points upward */
+div.triangle-up {
+  display: inline-block;
+  float: right;
+  float:bottom;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #FFD07F;
+}
+
+/* Stylings for dropdown menu. Animations to show dropdown content is defined
+   here. The transition will use the property "max-height" for animation. */
+div.dropdown-content {
+  overflow-y: hidden;
+  background-color: #F0F0ED;
+  width: 90%;
+  min-width: 160px;
+  max-height: 1000px;
+  position: relative;
+  transition-property: max-height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  text-align: left;
+}
+
+/* General padding for content in dropdown menu */
+div.dropdown-content-container {
+  padding: 20px;
+}
+
+/* Left layout for dropdown content */
+div.dropdown-content-left {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding-bottom: 20px;
+}
+
+/* Right layout for dropdown content */
+div.dropdown-content-right {
+  float: right;
+  width: 50%;
+  max-height: 100%;
+  padding-bottom: 20px;
+}
+
+/* Color for links when hovered */
+div.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* This will hide the content of the dropdown menu. The animation to hide the content
+   is defined here. The transition uses "max-height" for animation. */
+div.dropdown-hide {
+  max-height: 0px;
+  transition-property: max-height;
+  transition-duration: 1.0s;
+  transition-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+/* Stylings for footer */
+footer {
+  clear: both;
+  font-family: Lato;
+  font-weight: 300;
+  padding: 20px;
+  background:#484236;
+  color:#d6d0c4;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gray;
+
+}
+
+li.nav {
+    float: left;
+	display: inline;
+	padding: 5px 20px 5px 20px;
+}
+
+li.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.nav a:hover {
+    background-color: #111;
+}
+
+#t01 {
+	 width:100%;
+	 padding-bottom:40px;
+}
+
+#even_col{
+    border-left:1px dotted #d6d0c4;
+	padding-left:20px;
+}
+
+#t01 tr {
+	 text-align:left;
+	 font-size:1.1em;
+}
+
+#t01 tr>td {
+	 text-align:left;
+	 font-size:0.9em;
+}
+
+#coll_desc {
+     text-align:center;
+}
