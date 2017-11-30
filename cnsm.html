@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design Challenge</title>
+
+  <link rel="stylesheet" href="cnsm_style.css">
+
+  <script src="dropdown_menu.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <!-- Put Nav Bar code here -->
+    <!-- Swapnil -->
+    <div id="header">
+    <ul class="nav">
+      <li class="nav"><a class="active" href="#home">CALIFORNIA STATE UNIVERSITY <strong>LONG BEACH</strong></a></li>
+      <li class="nav"><a href="#academics">ACADEMICS</a></li>
+      <li class="nav"><a href="#campus_life">CAMPUS LIFE</a></li>
+      <li class="nav"><a href="#admissions">ADMISSIONS</a></li>
+      <li class="nav"><a href="#alumini">ALUMNI</a></li>
+      <li class="nav"><a href="#administration">ADMINISTRATION</a></li>
+      <li class="nav"><a href="#apply">APPLY</a></li>
+      <li class="nav"><a href="#search"><img src="search-icon.png" style="width:20px; height:20px"/></a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <header>
+    <!-- Put header code here -->
+    <!-- Swapnil -->
+    <div class="welcome">
+      <font size="3">Welcome to the</font>
+    </div>
+    COLLEGE OF NATURAL SCIENCES AND MATHEMATICS
+  </br>
+    <font size="3">California State University, Long Beach</font>
+  </header>
+
+  <aside>
+    <!-- Put left side content here -->
+    <!-- Ivan (Menus) -->
+    <div class="aside-container">
+        <h1>MENU</h1>
+        <div class="">
+            <a href="#cnsm_home">CNSM HOME</a>
+            <a href="#contacts">CONTACTS</a>
+        </div>
+        <h4>FOR STUDENTS</h4>
+        <div class="aside-links">
+            <a href="#advising">ADVISING</a>
+            <a href="#tutoring">TUTORING</a>
+            <a href="#jensen">JENSEN SAS CENTER</a>
+            <a href="#schedule">SCHEDULE OF CLASSES</a>
+            <a href="#commencement">COMMENCEMENT</a>
+            <button onclick="showContent('student_resources', 'side_buttonItem1')" class="aside-dropdown" align="left">
+                STUDENT RESOURCES <div id="side_buttonItem1" class="triangle-down"></div>
+            </button>
+            <div id="student_resources" class="aside-dropdown-content dropdown-hide">
+
+                <div class="dropdown-content-container2">
+                        <a href="#get_started">Getting Started</a>
+                        <a href="#study36">Study36</a>
+                        <a href="#student_research">Student Research</a>
+                        <a href="#freshman_scholars_learning_community">Freshman Scholars Learning Community</a>
+                        <a href="#health_profession_advising">Health Profession Advising</a>
+                        <a href="#student_connections">Student Connections</a>
+                        <a href="#career_and_professional_planning">Career and Professional Planning</a>
+                        <a href="#csulb_innovation_challenge">CSULB Innovation Challenge</a>
+                        <a href="#scholarships">Scholarships</a>
+                        <a href="#internships">Internships</a>
+                </div>
+            </div>
+        </div>
+        <h4>COLLEGE RESOURCES</h4>
+        <div class="aside-links">
+          <a href="#SAFETY">SAFETY</a>
+          <a href="#SAFETY">RESEARCH</a>
+          <a href="#SAFETY">TEACHING AND LEARNING</a>
+          <a href="#SAFETY">BUILD</a>
+          <button onclick="showContent('about_college', 'side_buttonItem1')" class="aside-dropdown" align="left">
+              ABOUT THE COLLEGE <div id="side_buttonItem1" class="triangle-down"></div>
+          </button>
+          <!--- TODO: stuff --->
+          <div id="about_college" class="aside-dropdown-content dropdown-hide">
+              <div class="dropdown-content-container2">
+                      <a href="#about_cnsm">About CNSM</a>
+                      <a href="#centers_institutes">Centers & Institutes</a>
+                      <a href="#facilities">Facilities</a>
+                      <a href="#mission_statement">Mission Statement</a>
+              </div>
+          </div>
+          <button onclick="showContent('alumni_development', 'side_buttonItem1')" class="aside-dropdown" align="left">
+              ALUMNI & DEVELOPMENT <div id="side_buttonItem1" class="triangle-down"></div>
+          </button>
+          <div id="alumni_development" class="aside-dropdown-content dropdown-hide">
+              <div class="dropdown-content-container2">
+                      <a href="#support_college">Support the College</a>
+                      <a href="#fellows">Fellows</a>
+                      <a href="#distinguished_alumni">Distinguished Alumni</a>
+                      <a href="#alumni_assoc">CSULB Alumni Association</a>
+              </div>
+          </div>
+          <a href="#SAFETY">JOBS</a>
+          <a href="#SAFETY">EMERGENCY INFORMATION</a>
+        </div>
+        <h4>FOR FACULTY & STAFF </h4>
+        <div class="aside-links">
+          <button onclick="showContent('policies_forms_more', 'side_buttonItem1')" class="aside-dropdown" align="left">
+              POLICIES, FORMS, & MORE <div id="side_buttonItem1" class="triangle-down"></div>
+          </button>
+
+          <!--- TODO: stuff --->
+          <div id="policies_forms_more" class="aside-dropdown-content dropdown-hide">
+              <div class="dropdown-content-container2">
+                      <a href="#about_cnsm">Policies Forms & Resources</a>
+                      <a href="#centers_institutes">Promoting Tolerance</a>
+                      <a href="#facilities">Accesible Instructional Materials</a>
+                      <a href="#mission_statement">Committies and Councils</a>
+                      <a href="#internships">Volunteer Assignments</a>
+                      <a href="#internships">Service Request Form</a>
+              </div>
+          </div>
+        </div>
+    </div>
+  </aside>
+
+  <!-- This is where the main content will be for the website. It will be on the right side -->
+  <section>
+    <!-- Put right content here -->
+    <!-- Jason (Dropdown Menu) -->
+
+    <!-- This will handle the padding for the whole section -->
+    <div class="section-container">
+
+      <!-- This is a header. h1-h3 will have the yellow underline, no need to add an hr -->
+      <h1>Departments</h1>
+
+      <div align="center">
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem1', 'buttonItem1')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          BIOLOGICAL SCIENCES <div id="buttonItem1" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem1" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              The Department of Biological Sciences is comprised of faculty, staff, and students dedicated to the teaching of biology
+              and discovering new biological truths for society. Biology, as a scientific discipline, functions through the integrated
+              use of a knowledge base (i.e. fundamentals and unifying concepts) with process (i.e., scientific method). The department
+              endeavors to provide an academic program that supports this integration. The academic curriculum should reflect this approach
+              through teaching of fundamental and unifying concepts integrated with the practice of analysis and discovery.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Degree & Options</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Advising</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Staff & Faculty</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Facility & Resources</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Seminar Series</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research Collections</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <br>
+              <img src="pictures/brian_livingston.jpg" alt="Brian Livingston"><br>
+              <b>Brian Livingston</b> <br>
+              Department Chair <br>
+              Office: HSCI 104 <br>
+              Phone: 562-985-4806 <br>
+              <a href="http://web.csulb.edu/depts/biology/about/contact.htm">Contact Biological Sciences</a><br>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem2', 'buttonItem2')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          CHEMISTRY & BIOCHEMISTRY<div id="buttonItem2" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem2" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              The Department of Chemistry and Biochemistry values teaching and research as equal and essential components to the education
+              of our students and seeks to integrate research with teaching at every possible opportunity
+              in the curriculum. Our teaching and research programs sustain a rigorous and innovative curriculum
+              that focuses on developing capabilities of students (both majors and non-majors) in chemistry and biochemistry,
+              developing problem-solving, critical thinking, and communication skills, and fosters a culture devoted to scholarship,
+              professional integrity, continued learning, and a responsible work ethic.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Degree & Options</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Advising</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Staff & Faculty</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Facility & Resources</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Seminar Series</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research Collections</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <br>
+              <img src="pictures/cbrazier.jpg" alt="Brian Livingston"><br>
+              <b>Brian Livingston</b> <br>
+              Department Chair <br>
+              Office: HSCI 104 <br>
+              Phone: 562-985-4806 <br>
+              <a href="http://chemistry.csulb.edu/contact.html">Contact Chemistry and Biochemistry</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem3', 'buttonItem3')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          ENVIRONMENTAL SCIENCE & POLICY<div id="buttonItem3" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem3" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              The Department of Biological Sciences is comprised of faculty, staff, and students dedicated to the teaching of biology
+              and discovering new biological truths for society. Biology, as a scientific discipline, functions through the integrated
+              use of a knowledge base (i.e. fundamentals and unifying concepts) with process (i.e., scientific method). The department
+              endeavors to provide an academic program that supports this integration. The academic curriculum should reflect this approach
+              through teaching of fundamental and unifying concepts integrated with the practice of analysis and discovery.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Degree & Options</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Advising</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Staff & Faculty</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Facility & Resources</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Seminar Series</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research Collections</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <br>
+              <img src="pictures/brian_livingston.jpg" alt="Brian Livingston"><br>
+              <b>Brian Livingston</b> <br>
+              Department Chair <br>
+              Office: HSCI 104 <br>
+              Phone: 562-985-4806 <br>
+              <a href="http://web.csulb.edu/depts/biology/about/contact.htm">Contact Biological Sciences</a><br>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem4', 'buttonItem4')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          GEOLOGICAL SCIENCE <div id="buttonItem4" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem4" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              The Department of Biological Sciences is comprised of faculty, staff, and students dedicated to the teaching of biology
+              and discovering new biological truths for society. Biology, as a scientific discipline, functions through the integrated
+              use of a knowledge base (i.e. fundamentals and unifying concepts) with process (i.e., scientific method). The department
+              endeavors to provide an academic program that supports this integration. The academic curriculum should reflect this approach
+              through teaching of fundamental and unifying concepts integrated with the practice of analysis and discovery.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Degree & Options</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Advising</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Staff & Faculty</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Facility & Resources</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Seminar Series</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research Collections</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <br>
+              <img src="pictures/brian_livingston.jpg" alt="Brian Livingston"><br>
+              <b>Brian Livingston</b> <br>
+              Department Chair <br>
+              Office: HSCI 104 <br>
+              Phone: 562-985-4806 <br>
+              <a href="http://web.csulb.edu/depts/biology/about/contact.htm">Contact Biological Sciences</a><br>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem5', 'buttonItem5')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          MATHEMATICS & STATISTICS <div id="buttonItem5" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem5" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              The Department of Biological Sciences is comprised of faculty, staff, and students dedicated to the teaching of biology
+              and discovering new biological truths for society. Biology, as a scientific discipline, functions through the integrated
+              use of a knowledge base (i.e. fundamentals and unifying concepts) with process (i.e., scientific method). The department
+              endeavors to provide an academic program that supports this integration. The academic curriculum should reflect this approach
+              through teaching of fundamental and unifying concepts integrated with the practice of analysis and discovery.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Degree & Options</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Advising</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Staff & Faculty</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Facility & Resources</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Seminar Series</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research Collections</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <br>
+              <img src="pictures/brian_livingston.jpg" alt="Brian Livingston"><br>
+              <b>Brian Livingston</b> <br>
+              Department Chair <br>
+              Office: HSCI 104 <br>
+              Phone: 562-985-4806 <br>
+              <a href="http://web.csulb.edu/depts/biology/about/contact.htm">Contact Biological Sciences</a><br>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem6', 'buttonItem6')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          PHYSICS & ASTRONOMY <div id="buttonItem6" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem6" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              The Department of Biological Sciences is comprised of faculty, staff, and students dedicated to the teaching of biology
+              and discovering new biological truths for society. Biology, as a scientific discipline, functions through the integrated
+              use of a knowledge base (i.e. fundamentals and unifying concepts) with process (i.e., scientific method). The department
+              endeavors to provide an academic program that supports this integration. The academic curriculum should reflect this approach
+              through teaching of fundamental and unifying concepts integrated with the practice of analysis and discovery.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Degree & Options</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Advising</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Staff & Faculty</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Facility & Resources</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Seminar Series</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research Collections</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <br>
+              <img src="pictures/brian_livingston.jpg" alt="Brian Livingston"><br>
+              <b>Brian Livingston</b> <br>
+              Department Chair <br>
+              Office: HSCI 104 <br>
+              Phone: 562-985-4806 <br>
+              <a href="http://web.csulb.edu/depts/biology/about/contact.htm">Contact Biological Sciences</a><br>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+
+        <!-- The button will call a function in "dropdown_menu.js" which will toggle
+         hiding/showing content and changing the triangle direction. The first parameter
+         is the id of the content to hide/show. The second parameter is the triangle
+         to toggle direction. -->
+        <button onclick="showContent('menuItem7', 'buttonItem7')" class="dropdown">
+          <!-- The triangle is rendered in a div class. The id must be unique to correctly
+          reference it in the Javascript code -->
+          SCIENCE EDUCATION <div id="buttonItem7" class="triangle-down"></div>
+        </button>
+
+        <!-- Content to display when button is clicked. By default the content will show.
+         Assigning the class "dropdown-hide" will initialize the content to hide.
+         The id must be unique from the other content to hide/show, otherwise the assigned
+         button will hide/show the wrong content. -->
+        <div id="menuItem7" class="dropdown-content dropdown-hide">
+
+          <!-- This will handle the general padding for the content -->
+          <div class="dropdown-content-container">
+
+            <!-- Top content. This will contain a link to the college homepage, and a description. -->
+            <div>
+              The Department of Biological Sciences is comprised of faculty, staff, and students dedicated to the teaching of biology
+              and discovering new biological truths for society. Biology, as a scientific discipline, functions through the integrated
+              use of a knowledge base (i.e. fundamentals and unifying concepts) with process (i.e., scientific method). The department
+              endeavors to provide an academic program that supports this integration. The academic curriculum should reflect this approach
+              through teaching of fundamental and unifying concepts integrated with the practice of analysis and discovery.
+            </div>
+
+            <!-- Left content. This will contain all the links for the college and departments -->
+            <div class="dropdown-content-left">
+              <br>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Degree & Options</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Advising</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Staff & Faculty</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Facility & Resources</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Seminar Series</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research</a>
+              <a href="http://web.csulb.edu/colleges/cnsm/">Research Collections</a>
+            </div>
+
+            <!-- Right content. This will contain information about the college dean -->
+            <div class="dropdown-content-right" align="center">
+              <br>
+              <img src="pictures/brian_livingston.jpg" alt="Brian Livingston">
+              <b>Brian Livingston</b> <br>
+              Department Chair <br>
+              Office: HSCI 104 <br>
+              Phone: 562-985-4806 <br>
+              <a href="http://web.csulb.edu/depts/biology/about/contact.htm">Contact Biological Sciences</a><br>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- This is where addition resources will be separated. This demostrates
+      how to separate content within the section -->
+      <h1>CNSM News</h1>
+
+      <div class="content-left">
+        <font size="5"><b>Welcome Dr. Curtis Bennett!</b></font><br>
+        <div class="text-padding-left">
+          The College of Natural Sciences and Mathematics is pleased to announce that Dr. Curtis Bennett started as
+          the college's new Richard D. Green Dean on July 31, 2017. Dr. Bennett is a nationally recognized mathematician
+          with a well-developed understanding of the full range of the responsibilities of a dean of Natural Sciences
+          and Mathematics within the CSU. Welcome, Dr. Bennett! <br>
+          <center><img src="pictures/my_man.jpg"></center>
+        </div>
+
+        <font size="5"><b>CNSM Spotlights</b></font><br>
+        <div class="text-padding-left">
+          CNSM students and faculty use what they learn to reveal the world about us. At every level of study,
+          from Chemistry 100 through top notch research done in faculty laboratories and field sites our scholars
+          and researchers are pursuing answers to their questions. This semester's Chemistry 100 students in Dr. Elaine Benal's
+          class proved this when they carried out water testing on campus water fountains and found lead in the Macintosh
+          Humanities water pipes. The campus has responded by providing alternate water sources until the affected plumbing
+          can be replaced. Local news agencies reported on the findings of the students.<br> <br>
+          Our faculty are pursuing innovation through research and notable findings are published in the Fall 2017 Issue of Quest:<br>
+          <div class="text-padding-left">
+            Biochemist Dr. Deepali Bhandari is researching the response in cancer cells to thrive, not die when experiencing endoplasmic reticulum stress. <br> <br>
+            Evolutionary Biologist Dr. Theodore Stankowich seeks answers to a basic question: why are some animals black and white? His latest study is the panda. <br> <br>
+            Physiologist Dr. Douglas Pace is focused on understanding the physiological energetics of marine invertebrate larval development. His current spotlight is
+            studying a parasite, Toxoplasma gondii that live in human 'host' cells.
+          </div>
+        </div>
+      </div>
+        <div class="content-right">
+          <center>
+        <table id="t02">
+          <tr id="border">
+            <th id="border">Date</th>
+            <th id="border">Event</th>
+          </tr>
+          <tr id="border">
+            <td id="border">NOV 20-NOV 22</td>
+            <td id="border">Fall Break (no classes, campus open)</td>
+          </tr>
+          <tr id="border">
+            <td id="border">NOV 23-NOV 26</td>
+            <td id="border">Thanksgiving Holiday (campus closed)</td>
+          </tr>
+          <tr id="border">
+            <td id="border">DEC 12</td>
+            <td id="border">Last Day of Fall Classes.</td>
+          </tr>
+          <tr id="border">
+            <td id="border">DEC 13-DEC 19</td>
+            <td id="border">Final Exams</td>
+          </tr>
+          <tr id="border">
+            <td id="border">DEC 22</td>
+            <td id="border">Last Day of Fall Semester.</td>
+          </tr>
+        </table>
+      </center>
+      </div>
+  </section>
+
+  <footer>
+    <!-- Put footer code here -->
+    <!-- Swapnil -->
+    <div id="table_div">
+      <table id="t01">
+         <tr>
+         <th>SERVICES</th>
+         <th id="even_col">COLLEGES</th>
+         <th>&nbsp; </th>
+         <th id="even_col">ADDITIONAL RESOURCES</th>
+         <th>&nbsp;</th>
+         <th id="even_col">&nbsp;</th>
+         </tr>
+         <tr>
+        <td>Emergency Information</td>
+        <td id="even_col">The Arts</td>
+        <td>Business Administration</td>
+        <td id="even_col">Media and Government Relations</td>
+        <td>Marketing and Communications</td>
+        <td id="even_col">CSU</td>
+         </tr>
+         <tr>
+          <td>Crisis Assistance</td>
+        <td id="even_col"> Engineering</td>
+        <td>Health & Human Services</td>
+        <td id="even_col">Careers</td>
+        <td>University Police</td>
+        <td id="even_col">Site Index</td>
+         </tr>
+         <tr>
+          <td>CARES Team</td>
+        <td id="even_col">Education</td>
+        <td>Continuing & Professional Education</td>
+        <td id="even_col">Help</td>
+        <td>Campus Directory</td>
+        <td id="even_col">Contact Us</td>
+         </tr>
+         <tr>
+          <td>Accessibility</td>
+        <td id="even_col"> Liberal Arts</td>
+        <td>Natural Sciences & Mathematics</td>
+        <td id="even_col">Title IX</td>
+        <td>Download Document Reader</td>
+        <td id="even_col">&nbsp;</td>
+         </tr>
+         <tr>
+          <td>Student Health Center</td>
+        <td id="even_col">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td id="even_col">Free Speech</td>
+        <td>&nbsp;</td>
+        <td id="even_col">&nbsp;</td>
+         </tr>
+    </table>
+    </div>
+    <div id="coll_desc">
+    <p>CALIFORNIA STATE UNIVERSITY <strong>LONG BEACH</strong><br><br>
+
+            1250 Bellflower Boulevard<br>
+          Long Beach, California 90840<br>
+          562.985.4111
+     </p>
+    </div>
+  </footer>
+
+</body>
+</html>
