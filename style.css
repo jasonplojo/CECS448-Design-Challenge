@@ -25,6 +25,7 @@ nav {
   position: fixed;
   overflow: auto;
   width: 100%;
+  z-index: 100;
 }
 
 /* Stylings for Header */
@@ -244,7 +245,6 @@ div.triangle-up {
    here. The transition will use the property "max-height" for animation. */
 div.dropdown-content {
   overflow-y: hidden;
-  z-index: -1;
   background-color: #F0F0ED;
   width: 90%;
   min-width: 160px;

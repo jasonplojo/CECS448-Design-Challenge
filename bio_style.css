@@ -239,6 +239,7 @@ div.dropdown-content {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   text-align: left;
+  z-index: -1;
 }
 
 /* General padding for content in dropdown menu */
