@@ -1,4 +1,4 @@
-/* Importing fonts that are used at the CSULB website */
+ /* Importing fonts that are used at the CSULB website */
 @font-face {
   font-family: Lato;
   src: url('fonts/Lato/Lato-Light.ttf');
@@ -30,12 +30,11 @@ nav {
 /* Stylings for Header */
 header {
   max-width: 100%;
-  height: 120px;
   text-align: center;
-  padding: 70px 0;
   font-family: Lato;
   font-weight: 400;
   font-size: 200%;
+  line-height: 200px;
   color: white;
   /* Background color used to visualize layout. Remove when publishing */
   background-color: #B7B7B7;
@@ -121,6 +120,28 @@ button.aside-dropdown {
     font-size: 14px;
     text-align: left;
     border-bottom: 1px solid #F0F0ED;
+}
+
+/* Renders a triangle the points downward */
+div.triangle-down-aside {
+  display: inline-block;
+  float: right;
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid #AC440C;
+}
+
+/* Renders a triangle the points upward */
+div.triangle-up-aside {
+  display: inline-block;
+  float: right;
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #AC440C;
 }
 
 /********************/
@@ -223,6 +244,7 @@ div.triangle-up {
    here. The transition will use the property "max-height" for animation. */
 div.dropdown-content {
   overflow-y: hidden;
+  z-index: -1;
   background-color: #F0F0ED;
   width: 90%;
   min-width: 160px;
@@ -328,4 +350,29 @@ li.nav a:hover {
 
 #coll_desc {
      text-align:center;
+}
+
+.currentCatalog{
+  background-color: lightgray;
+  margin-top: 15%;
+}
+
+.indented{
+  text-align: left;
+  padding: 10px 25px;
+}
+
+#imgholder{
+  padding: -25px;
+}
+
+.cataloglinks{
+  color: #A74300;
+  text-decoration: underline;
+}
+
+.catalogheading{
+  color: #A74300;
+  text-align: left;
+  padding: 10px 25px;
 }
