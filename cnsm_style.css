@@ -31,6 +31,7 @@ nav {
   position: fixed;
   overflow: auto;
   width: 100%;
+  z-index: 100;
 }
 
 /* Stylings for Header */
@@ -241,6 +242,7 @@ div.dropdown-content {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   text-align: left;
+  z-index: -1;
 }
 
 /* General padding for content in dropdown menu */
