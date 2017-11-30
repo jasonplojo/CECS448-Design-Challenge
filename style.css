@@ -1,4 +1,4 @@
-/* Importing fonts that are used at the CSULB website */
+ /* Importing fonts that are used at the CSULB website */
 @font-face {
   font-family: Lato;
   src: url('fonts/Lato/Lato-Light.ttf');
@@ -328,4 +328,29 @@ li.nav a:hover {
 
 #coll_desc {
      text-align:center;
+}
+
+.currentCatalog{
+  background-color: lightgray;
+  margin-top: 15%;
+}
+
+.indented{
+  text-align: left;
+  padding: 10px 25px;
+}
+
+#imgholder{
+  padding: -25px;
+}
+
+.cataloglinks{
+  color: #A74300;
+  text-decoration: underline;
+}
+
+.catalogheading{
+  color: #A74300;
+  text-align: left;
+  padding: 10px 25px;
 }
