@@ -392,6 +392,7 @@ li.nav a.submenu_nav {
     opacity: 0.8;
 }
 .dropdown_options {
+    position:absolute;
     overflow-y: hidden;
     overflow-x: hidden;
     display: none;
