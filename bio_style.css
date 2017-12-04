@@ -33,9 +33,9 @@ nav {
 header {
   padding-top: 50px;
   max-width: 100%;
+  height: 120px;
   line-height: 200px;
   text-align: center;
-  padding: 70px 0;
   font-family: Lato;
   font-weight: 400;
   font-size: 200%;
@@ -45,7 +45,7 @@ header {
 }
 
 div.header_image {
-    margin-top: 10px
+    overflow: hidden;
 }
 
 /* Stylings for side bar on the left. */
