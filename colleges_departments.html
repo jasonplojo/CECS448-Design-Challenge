@@ -83,9 +83,10 @@
     </div>
 </nav>
 
-  <header>
-    THIS IS THE HEADER
-  </header>
+<header class="header_container">
+  <img src="http://www.csulb.edu/sites/default/files/content_ats_media-placeholder-3.jpg?timestamp=1487349986" alt="Colleges and Departments">    
+  <div class="centered">COLLEGES AND DEPARTMENTS</div>
+</header>
 
   <aside>
     <div class="aside-container">
@@ -116,6 +117,28 @@
       <h1>Colleges & Departments</h1>
 
       <div align="center">
+          <button onclick="showContent('menuItem0', 'buttonItem0')" class="dropdown">
+              COLLEGE OF THE ARTS <div id="buttonItem0" class="triangle-down"></div>
+              </button>
+              <div id="menuItem7" class="dropdown-content dropdown-hide">
+
+              <div class="dropdown-content-container">
+
+                  <div>
+                  This is the top content.
+                  </div>
+
+                  <div class="dropdown-content-left">
+                  This is the left content.
+                  </div>
+
+                  <div class="dropdown-content-right" align="center">
+                  This is the right content.
+                  </div>
+
+              </div>
+              </div>
+
         <button onclick="showContent('menuItem1', 'buttonItem1')" class="dropdown">
          COLLEGE OF BUSINESS ADMINISTRATION <div id="buttonItem1" class="triangle-down"></div>
         </button>
@@ -241,7 +264,7 @@
                 </div>
 
         <button onclick="showContent('menuItem5', 'buttonItem5')" class="dropdown">
-                COLLEGE OF BUSINESS ADMINISTRATION <div id="buttonItem5" class="triangle-down"></div>
+                COLLEGE OF LIBERAL ARTS <div id="buttonItem5" class="triangle-down"></div>
                 </button>
                     <div id="menuItem5" class="dropdown-content dropdown-hide">
 
@@ -301,7 +324,7 @@
                     </div>
                     </div>
         <button onclick="showContent('menuItem7', 'buttonItem7')" class="dropdown">
-                COLLEGE OF EDUCATION <div id="buttonItem7" class="triangle-down"></div>
+                COLLEGE OF CONTINUING AND PROFESSIONAL EDUCATION <div id="buttonItem7" class="triangle-down"></div>
                 </button>
                 <div id="menuItem7" class="dropdown-content dropdown-hide">
 
