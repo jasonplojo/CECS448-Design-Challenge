@@ -439,6 +439,6 @@ li.nav a.submenu_nav {
   transform: translate(-50%, -50%);
 }
 
-img{
+img.header {
   width: 100%;
 }
