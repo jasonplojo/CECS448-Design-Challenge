@@ -21,12 +21,14 @@ body {
 nav {
   font-family: Lato;
   opacity: 0.9;
+  font-size: 0.75em;
   background-color: gray;
   position: fixed;
 
   width: 100%;
   cursor: pointer;
   display: block;
+  z-index: 100;
 }
 
 /* Stylings for Header */
