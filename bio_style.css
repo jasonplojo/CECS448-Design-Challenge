@@ -24,8 +24,9 @@ nav {
   opacity: 0.9;
   background-color: gray;
   position: fixed;
-  overflow: auto;
+  overflow: visible;
   width: 100%;
+  z-index: 100;
 }
 
 /* Stylings for Header */
