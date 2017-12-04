@@ -20,6 +20,7 @@ body {
 /* Stylings for Nav Bar */
 nav {
   font-family: Lato;
+  font-size: 0.75em;
   opacity: 0.9;
   background-color: gray;
   position: fixed;
@@ -194,6 +195,7 @@ button.dropdown {
   font-size: 17px;
   text-align: left;
   line-height: 20px;
+  margin-bottom: 2px;
 }
 
 /* Dropdown button color when hovered over */
@@ -298,16 +300,16 @@ ul.nav {
 }
 
 li.nav {
-    float: left;
+  float: left;
 	display: inline;
-	padding: 5px 20px 5px 20px;
+	padding: 5px 10px 5px 10px;
 }
 
 li.nav a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
 }
 
