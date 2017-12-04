@@ -29,8 +29,9 @@ nav {
 
 /* Stylings for Header */
 header {
+  padding-top: 50px;
   max-width: 100%;
-  height: 120px;
+  line-height: 200px;
   text-align: center;
   padding: 70px 0;
   font-family: Lato;
@@ -374,5 +375,3 @@ li.nav a.submenu_nav {
 .options:hover .dropdown_options {
     display: block;
 }
-
-
