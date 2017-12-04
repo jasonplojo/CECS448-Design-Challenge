@@ -33,11 +33,11 @@ nav {
 
 /* Stylings for Header */
 header {
-
+  padding-top:50px;
   max-width: 100%;
   height: 120px;
   text-align: center;
-  padding: 70px 0;
+  line-height: 200px;
   font-family: Lato;
   font-weight: 400;
   font-size: 200%;
@@ -47,7 +47,7 @@ header {
   background-color: #B7B7B7;
 }
 div.header_image {
-    margin-top: 10px
+    margin-top: 4px;
 }
 
 /* Stylings for side bar on the left. */
